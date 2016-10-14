@@ -10,7 +10,7 @@ int other1X, other1Y, other1Pressed;
 NetAddress other2;
 int other2X, other2Y, other2Pressed;
 
-// make this unique for each participant
+// TODO: make this unique for each participant
 int myself = 1; // others will probably be 2 and 3
 
 void setup() {
@@ -28,7 +28,7 @@ void setup() {
   fill(255, 20);
 }
 void draw() {
-  if (mousePressed && other1Pressed == 1 && other2Pressed == 1) {
+  if (mousePressed == true && other1Pressed == 1 && other2Pressed == 1) {
     triangle(mouseX, mouseY, other1X, other1Y, other2X, other2Y);
   }
 }
@@ -48,6 +48,9 @@ void mouseReleased() {
 }
 // otherDrag runs when receiving a /drag OSC message
 void otherDrag(int x, int y, int who) {
+  // TODO: if I'm 1, check 2 and 3
+  // if I'm 2, check 1 and 3
+  // if I'm 3, check 1 and 2
   if(who == 2) {
     other1X = x;
     other1Y = y;
@@ -61,6 +64,9 @@ void otherDrag(int x, int y, int who) {
 }
 // otherReleased runs when receiving a /release OSC message
 void otherReleased(int who) {
+  // TODO: if I'm 1, check 2 and 3
+  // if I'm 2, check 1 and 3
+  // if I'm 3, check 1 and 2
   if(who == 2) {
     other1Pressed = 0;
   }
