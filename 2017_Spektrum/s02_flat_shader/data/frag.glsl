@@ -24,9 +24,25 @@ vec3 hsv2rgb(vec3 c) {
 }
 
 void main(void) {
+  // convert RGB to HSV
   vec4 hsb = rgb2hsv(vertColor.rgb);
-  float r = 0.5 + 0.2 * 
-    sin(time + gl_FragCoord.x / (15.0 + 50 * hsb.x)) * 
-    sin(time + gl_FragCoord.y / (15.0 + 50 * hsb.x));
-  gl_FragColor = vertColor - r;
+
+  // calculated angle based on hue
+  float a = hsb.x * 6.28;
+
+  // create rotation matrix based on angle
+  mat4 rot = mat4( 
+      cos(a), -sin(a), 0.0, 0.0,
+      sin(a),  cos(a), 0.0, 0.0,
+      0.0, 0.0, 1.0, 0.0,
+      0.0, 0.0, 0.0, 1.0 
+  );
+
+  // rotate coordinates of current pixel
+  vec4 point = gl_FragCoord * rot;
+
+  // calculate a brightness value based on the rotated point
+  float bri = smoothstep(0.45, 0.55, 0.5 + 0.5 * sin(point.x * 0.5));
+
+  gl_FragColor = vec4(bri, bri, bri, 1.0);
 }
