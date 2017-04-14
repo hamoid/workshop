@@ -47,6 +47,7 @@ Produce a video clip for a song using 3D meshes, shader deformation and effects,
 ## References
 
 * https://github.com/processing/processing/wiki/Advanced-OpenGL
-* https://www.khronos.org/files/opengles20-reference-card.pdf
-* ( https://www.khronos.org/developers/reference-cards/ )
+* Default Processing shaders https://github.com/processing/processing/tree/master/core/src/processing/opengl/shaders
+* OpenGLES2 Reference card https://www.khronos.org/files/opengles20-reference-card.pdf
+* Other Reference cards https://www.khronos.org/developers/reference-cards/
 
