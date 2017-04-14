@@ -24,13 +24,9 @@ Produce a video clip for a song using 3D meshes, shader deformation and effects,
 * Noise
 * Sampling an image
 
-## References
+# Creating 3D shapes with the HE_Mesh and ToxicLibs libraries
 
-* (soon)
-
-# Creating 3D shapes with the heMesh and ToxicLibs libraries
-
-* HeMesh
+* HE_Mesh
 * Toxiclibs
 
 # Shaders
