@@ -1,4 +1,6 @@
-Code from the Collaborative Processing workshop at TNUA - Taipei National University of the Arts
+# Collaborative Processing workshop
+
+At TNUA - Taipei National University of the Arts
 
 These are Processing only examples and require the oscP5 library (http://www.sojamo.de/libraries/oscP5/).
 
