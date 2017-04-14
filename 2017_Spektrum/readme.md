@@ -1,6 +1,6 @@
 # Day project 
 
-Produce a real time video clip for a song using 3D graphics.
+Produce a video clip for a song using 3D meshes, shader deformation and effects, and easing. The song will be analyzed using FFT.
 
 # Easing and sequencing
 
@@ -20,9 +20,9 @@ Produce a real time video clip for a song using 3D graphics.
 # Math - Randomness and aesthetics
 
 * Probability
-* Random, pow
-* Curves
+* Randomness and curves
 * Noise
+* Sampling an image
 
 ## References
 
