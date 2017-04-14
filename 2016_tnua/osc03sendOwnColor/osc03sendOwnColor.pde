@@ -18,6 +18,8 @@ void setup() {
 
   other = new NetAddress("127.0.0.1", 12000);
 
+  //myColor = #FF0000;
+  //myColor = color(random(255), random(255), random(255));
   myColor = color(random(255), 0, 255);
   background(255);
   noStroke();

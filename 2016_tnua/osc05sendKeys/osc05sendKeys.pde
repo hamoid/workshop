@@ -62,6 +62,7 @@ void keyPressed() {
   if(key == 'l') {
     // do something if we pressed 
   }
+  // more key tests here if you want
 }
 // otherDrag runs when receiving a /drag OSC message
 void otherDrag(int x, int y, int who) {
