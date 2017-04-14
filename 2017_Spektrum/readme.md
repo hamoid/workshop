@@ -26,7 +26,8 @@ Produce a video clip for a song using 3D meshes, shader deformation and effects,
 
 ## Math - Randomness and aesthetics
 
-* Probability
+* Simple probability: `random(100) < 30`
+* Weighted probability: http://www.colourlovers.com/palette/4478958/Couldve
 * Randomness and curves
 * Noise
 * Sampling an image
