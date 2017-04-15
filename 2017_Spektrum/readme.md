@@ -52,3 +52,7 @@ Produce a video clip for a song using 3D meshes, shader deformation and effects,
 * OpenGLES2 Reference card https://www.khronos.org/files/opengles20-reference-card.pdf
 * Other Reference cards https://www.khronos.org/developers/reference-cards/
 
+# p5.js
+
+p5.js is the new, JavaScript based version of Processing. See here how to convert your program:
+https://github.com/processing/p5.js/wiki/Processing-transition
