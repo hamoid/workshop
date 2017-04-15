@@ -22,6 +22,6 @@ void mousePressed() {
   // Start a new new envelope, from the current value
   // to a random one in 500 milliseconds
   sz.initialize(new float[] {
-    sz.currVal, 500, random(50, 400)
-  }, 1);
+    sz.currVal, 500, random(50, 400), 100, sz.currVal
+  }, 3);
 }

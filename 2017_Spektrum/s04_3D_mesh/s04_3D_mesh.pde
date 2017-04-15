@@ -26,7 +26,7 @@ void setup() {
 void draw() {
   background(#0971B2);
   shader(shader1);
-  directionalLight(255, 255, 255, 1, 1, -1);
+  directionalLight(255, 255, 255, -1, -1, -1);
 
   pushMatrix();
   translate(width*0.33, height*0.33, 0);
@@ -46,6 +46,9 @@ void draw() {
 }
 void mousePressed() {
   makeShape();
+}
+void keyPressed() {
+  save("stripes.png");
 }
 void makeShape() {
   currentType=(currentType+1)%13;

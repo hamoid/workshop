@@ -26,7 +26,7 @@ void main(void) {
   vec4 point = gl_FragCoord * rot;
 
   // calculate a brightness value based on the rotated point
-  float threshold = step(mod(point.x * 0.1, 1.0), 1.0 - lumi * 4);
+  float threshold = step(mod(point.x * 0.1, 1.0), 1.0 - lumi * 2);
 
   vec4 dark = origColor * vec4(0.7,	0.7, 0.7, 1.0);
   gl_FragColor = mix(dark, origColor, threshold);
