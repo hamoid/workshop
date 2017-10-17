@@ -1,9 +1,15 @@
+// keyboard interaction
+
+// using 3 keys to set colors: a, b and c.
+// note that A, B or C won't work.
+
 void setup() {
   size(800, 400);
 }
 void draw() {
   if (mousePressed) {
     ellipse(mouseX, mouseY, 10, 10);
+    // draw an ellipse mirrored horizontally
     ellipse(width-mouseX, mouseY, 10, 10);    
   }
   

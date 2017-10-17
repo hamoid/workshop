@@ -1,5 +1,9 @@
+// mouse interaction
 
-// we can not call
+// drawing lines from the mouse position to a random
+// point on the right border of the screen
+
+// the 's' key is used for saving an image
 
 // this is called only once
 void setup() {

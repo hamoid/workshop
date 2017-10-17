@@ -1,3 +1,5 @@
+// basic drawing
+
 // this makes a window of the specified size
 size(800, 400);
 

@@ -1,3 +1,8 @@
+// randomness and probability
+
+// also note random(100, 200) is used
+// to get a random number between 100 and 200
+
 void setup() {
   size(800, 400);
 }
@@ -11,6 +16,7 @@ void draw() {
   }
 
   // 0.1% probability of erasing the screen
+  // very rare event
   if(random(100) < 0.1) {
     background(255);
   }
